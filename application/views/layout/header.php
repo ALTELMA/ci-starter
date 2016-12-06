@@ -20,12 +20,12 @@
                 </a>
                 <ul class="dropdown-menu dropdown-user">
                     <li>
-                        <a href="<?php echo base_url('user/' . $this->session->userdata('user_id')); ?>">
+                        <a href="<?php echo base_url('user/'.$this->session->userdata('user_id')); ?>">
                             <i class="fa fa-user fa-fw"></i> ข้อมูลส่วนตัว
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('user/password/' . $this->session->userdata('user_id')); ?>">
+                        <a href="<?php echo base_url('user/password/'.$this->session->userdata('user_id')); ?>">
                             <i class="fa fa-key fa-fw"></i> เปลี่นรหัสผ่าน
                         </a>
                     </li>

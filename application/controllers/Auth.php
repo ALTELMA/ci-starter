@@ -1,4 +1,5 @@
 <?php
+
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Auth extends My_Controller
@@ -22,10 +23,10 @@ class Auth extends My_Controller
 
         // Cretae user session
         $data = [
-            'user_id' => $user->id,
-            'username' => $user->username,
-            'email' => $user->email,
-            'type' => $user->type,
+            'user_id'   => $user->id,
+            'username'  => $user->username,
+            'email'     => $user->email,
+            'type'      => $user->type,
             'is_active' => $user->is_active,
             'logged_in' => true,
         ];
@@ -37,7 +38,7 @@ class Auth extends My_Controller
 
     public function logout()
     {
-        $data = ['user_id','username','email','type','is_active','logged_in',];
+        $data = ['user_id', 'username', 'email', 'type', 'is_active', 'logged_in'];
         $this->session->unset_userdata($data);
         redirect('login');
     }
